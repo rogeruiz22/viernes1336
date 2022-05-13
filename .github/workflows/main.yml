@@ -21,7 +21,10 @@ jobs:
           java-version: 1.8
 
       - name: Build and Run Maven
-        run: mvn test
+        run: |
+          mvn clean
+          mcn install
+          mvn test
          
          
       

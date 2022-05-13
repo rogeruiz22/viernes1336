@@ -10,7 +10,7 @@ public class BaseTests {
     private WebDriver driver;
 
     @Test
-    public void setUp() throws InterruptedException {
+    public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         WebDriver driver = new ChromeDriver();
 

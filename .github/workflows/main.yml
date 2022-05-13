@@ -28,13 +28,9 @@ jobs:
           mvn package
           mvn -B package --file pom.xml
 
-      - name: Probando
-        run: |
-          pwd
-
       - name: Run Java class
         run: |
-          cd ./src/test/java/org/example/
+          cd ../src/test/java/org/example/
           javac BaseTests.java
           java BaseTests.java
          

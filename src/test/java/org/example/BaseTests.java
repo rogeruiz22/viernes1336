@@ -4,10 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class BaseTests {
     private WebDriver driver;
 
+    @Test
     public void setUp() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         WebDriver driver = new ChromeDriver();

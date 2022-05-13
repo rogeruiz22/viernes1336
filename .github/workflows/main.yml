@@ -30,7 +30,7 @@ jobs:
 
       - name: Run Java class
         run: |
-          cd /home/runner/work/viernes1336/viernes1336/src/test/java/org/example
+          cd src/test/java/org/example
           java BaseTests.java
          
          

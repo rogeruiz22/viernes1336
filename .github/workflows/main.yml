@@ -21,13 +21,7 @@ jobs:
           java-version: 1.8
 
       - name: Build and Run Maven
-        run: |
-          mvn clean
-          #mvn package
-          #mvn install
-          #mvn -B package --file pom.xml
-          mvn compile
-          mvn test
+        run: mvn test
          
          
       

@@ -20,6 +20,14 @@ jobs:
         with:
           java-version: 1.8
 
+      - name: Build con Maven
+        run: |
+          mvn clean
+          mvn compile
+          mvn install
+          mvn package
+          mvn -B package --file pom.xml
+
       - name: Run Java class
         run: mvn test
          

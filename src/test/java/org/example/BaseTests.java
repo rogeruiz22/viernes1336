@@ -1,6 +1,7 @@
 package org.example;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,6 +27,29 @@ public class BaseTests {
         loginButton.click();
 
         Thread.sleep(7000);
+
+        WebElement appLauncherButton = driver.findElement(By.xpath("//div[@data-aura-class='navexWorkspaceManager']//div[@role='navigation']//button"));
+        appLauncherButton.click();
+
+        driver.switchTo().activeElement();
+
+        WebElement appLauncherSearchBox = driver.findElement(By.xpath("//input[@placeholder='Search apps and items...']"));
+        appLauncherSearchBox.sendKeys("Contact");
+        appLauncherSearchBox.sendKeys(Keys.RETURN);
+
+        WebElement selectAllCheckbox = driver.findElement(By.xpath("//span[@class='checkbox-container uiInput forceVirtualCheckbox uiInput--default']"));
+        selectAllCheckbox.click();
+
+        WebElement sendListEmailButton = driver.findElement(By.xpath("//div[text()='Send List Email']"));
+        sendListEmailButton.click();
+
+        driver.switchTo().activeElement();
+
+        WebElement subjectBox = driver.findElement(By.xpath("//input[@placeholder='Enter Subject...']"));
+        subjectBox.sendKeys("Github Actions Email como prueba de que funciona");
+
+        WebElement sendButton = driver.findElement(By.xpath("//button[text()='Send']"));
+        sendButton.click();
 
         driver.quit();
     }

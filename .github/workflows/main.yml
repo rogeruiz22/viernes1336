@@ -21,8 +21,7 @@ jobs:
           java-version: 1.8
 
       - name: Run Java class
-        run: |
-          mvn test
+        run: mvn test
          
          
       

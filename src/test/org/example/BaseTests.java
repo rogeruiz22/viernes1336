@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BaseTests {
@@ -24,6 +25,10 @@ public class BaseTests {
         passwordBox.sendKeys("incubator2024");
 
         loginButton.click();
+
+        String siteTitle = driver.getTitle();
+
+        Assert.assertEquals(siteTitle, "Home | Salesforce", "El login fallo !");
 
         Thread.sleep(7000);
 

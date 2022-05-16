@@ -37,6 +37,7 @@ public class BaseTests {
         driver.quit();
     }
 
+    @Test
     public static void main(String[] args) throws Exception {
         BaseTests test = new BaseTests();
         test.setUp();

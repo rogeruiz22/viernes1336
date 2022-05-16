@@ -2,6 +2,7 @@ name: First Workflow
 
 on:
   push:
+    branches: [ master ]
 
 
   # Allows you to run this workflow manually from the Actions tab
@@ -22,8 +23,7 @@ jobs:
 
       - name: Build and Run Maven
         run: |
-          mvn clean install
-          mvn test
+          mvn -B package --file pom.xml
          
          
       

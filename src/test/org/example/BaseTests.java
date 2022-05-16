@@ -28,6 +28,8 @@ public class BaseTests {
 
         String siteTitle = driver.getTitle();
 
+        Thread.sleep(3000);
+
         Assert.assertEquals(siteTitle, "Home | Salesforce", "El login fallo !");
 
         Thread.sleep(7000);

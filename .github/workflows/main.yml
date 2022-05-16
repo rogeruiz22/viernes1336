@@ -23,8 +23,11 @@ jobs:
 
       - name: Build and Run Maven
         run: |
-          mvn clean install
+          mvn clean
+          mcn compile
+          mvn test-compile
           mvn test
+          mvn install
          
          
       

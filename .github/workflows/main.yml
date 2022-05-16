@@ -9,7 +9,7 @@ on:
 
 jobs:
   Primer-Trabajo:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Cambiando a la rama actual

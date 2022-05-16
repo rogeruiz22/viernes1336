@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd42f4e-5027-49b9-935a-dc4a70186dfb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.org.example.BaseTests">
+  <component name="RunManager" selected="TestNG.BaseTests.setUp">
     <configuration name="org.example.BaseTests" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.BaseTests" />
       <module name="viernes1336" />
@@ -75,6 +76,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BaseTests.setUp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="viernes1336" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BaseTests" />
+      <option name="METHOD_NAME" value="setUp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="viernes1336" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BaseTests.setUp" />
         <item itemvalue="TestNG.BaseTests" />
         <item itemvalue="TestNG.&lt;default&gt;" />
       </list>

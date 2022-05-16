@@ -25,7 +25,7 @@ jobs:
         run: |
           mvn clean install
           mvn test
-          mvn test -Dtest=BaseTests
+          mvn test -Dtest=setUp()
          
          
       

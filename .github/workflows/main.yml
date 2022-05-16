@@ -22,7 +22,7 @@ jobs:
 
       - name: Build and Run Maven
         run: |
-          mvn clean install <!-- o puede ser: mvn clean package -->
+          mvn clean install
           mvn test
          
          

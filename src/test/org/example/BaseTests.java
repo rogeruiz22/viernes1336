@@ -22,7 +22,7 @@ public class BaseTests {
         WebElement loginButton = driver.findElement(By.xpath("//input[@id='Login']"));
 
         usernameBox.sendKeys("incubatorteam@oktana.com");
-        passwordBox.sendKeys("incubator2024");
+        passwordBox.sendKeys("incubator2022");
 
         loginButton.click();
 

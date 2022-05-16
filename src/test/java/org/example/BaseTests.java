@@ -21,7 +21,7 @@ public class BaseTests {
         WebElement loginButton = driver.findElement(By.xpath("//input[@id='Login']"));
 
         usernameBox.sendKeys("incubatorteam@oktana.com");
-        passwordBox.sendKeys("incubator2023");
+        passwordBox.sendKeys("incubator2024");
 
         loginButton.click();
 
